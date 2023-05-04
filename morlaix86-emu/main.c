@@ -1,6 +1,8 @@
 #include "cpu.h"
 
 int main() {
-  print_hello_world();
+  CPU cpu;
+  cpu_reset(&cpu);
+  cpu_dump_state(&cpu);
   return 0;
 }
