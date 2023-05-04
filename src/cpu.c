@@ -31,12 +31,12 @@ void cpu_dump_state(CPU *cpu) {
   printf("Flags\n");
   printf("status word: 0x%04X\n", cpu->flags);
   printf("\tcarry: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tparity: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tauxiliary_carry: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tzero: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tsign: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\ttrap: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tinterrupt_enable: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\tdirection: %d\n", cpu_flag(cpu, FLAG_CARRY));
-  printf("\toverflow: %d\n", cpu_flag(cpu, FLAG_CARRY));
+  printf("\tparity: %d\n", cpu_flag(cpu, FLAG_PARITY));
+  printf("\tauxiliary_carry: %d\n", cpu_flag(cpu, FLAG_AUXILIARY_CARRY));
+  printf("\tzero: %d\n", cpu_flag(cpu, FLAG_ZERO));
+  printf("\tsign: %d\n", cpu_flag(cpu, FLAG_SIGN));
+  printf("\ttrap: %d\n", cpu_flag(cpu, FLAG_TRAP));
+  printf("\tinterrupt_enable: %d\n", cpu_flag(cpu, FLAG_INTERRUPT_ENABLE));
+  printf("\tdirection: %d\n", cpu_flag(cpu, FLAG_DIRECTION));
+  printf("\toverflow: %d\n", cpu_flag(cpu, FLAG_OVERFLOW));
 }
